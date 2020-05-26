@@ -1,6 +1,6 @@
 /* Здесь будут храниться стили нашего сайта */
 body {
-	font-family: Roboto;
+	font-family: 'Roboto';
 	margin: 0; 
 	font-size: 18px;
 	font-weight: 400;
@@ -13,6 +13,7 @@ header {
 	background-color: #3a7dfd;
 	color: #ffffff;
 	padding-bottom: 22px;
+	text-shadow: 10px 7px 10px rgba(18, 61, 145, 0.75);
 }
 img{
 	max-width: 100%
@@ -21,15 +22,17 @@ img{
 	text-align: left;
 }
 .header-button {
+	cursor: pointer;
 	border: none;
 	width: 200px;
 	height: 50px;
-	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
+	box-shadow: 10px 7px 25px 1px rgba(18, 61, 145, 0.75);
 	border-radius: 50px;
 	background-color: #ffffff;
 	padding: 15px 45px;
 	color: #072b6f;
 	font-weight: 700;
+	text-shadow: none;
 }
 .header-button:hover {
 	box-shadow: none;
@@ -59,8 +62,6 @@ img{
 	margin-top: 20px;
 	font-size: 12px;
 	padding-left: 50px;
-	
-	/*text-align: center;*/
 }
 
 					/*styles of the portfolio srction*/
@@ -125,6 +126,7 @@ img{
 footer{
 	background-color: #3a7dfd;
 	color: #fff;
+	text-shadow: 10px 7px 10px rgba(18, 61, 145, 0.75);
 }
 footer h4{
 	margin-top: 0;
@@ -150,29 +152,31 @@ footer p{
 	text-align: center;
 }
 .social-net-block a{
-	padding: 0px 12px;
+	margin: 0px 12px;
 }
 .footer-feedback-block{
 	margin-top: 60px;
 	text-align: center;
 }
 .footer-button{
+	cursor: pointer;
 	padding: 5px 30px;
 	background-color: transparent;
 	width: 165px;
 	height: 48px;
 	border-radius: 24px;
-	border: 1px solid #ffffff;
+	border: 2px solid #ffffff;
 	color: #deedfe;
 	font-size: 18px;
 	font-weight: 400;
 }
 .footer-button:hover {
 	background-color: #fff;
-	color: green;
+	color: #3a7dfd;
 	-webkit-transition: 0.2s;
 	-o-transition: 0.2s;
 	transition: 0.2s;
+	text-shadow: none;
 }
 .footer-button a{
 	color: white;
@@ -180,6 +184,13 @@ footer p{
 }
 .footer-feedback-block p{
 	margin: 13px;
+}
+.social-net-block img{
+	box-shadow: 10px 7px 25px 1px rgba(18, 61, 145, 0.75);
+	border-radius: 50%;
+}
+.social-net-block img:hover{
+	box-shadow: none;
 }
 
 							/*adapting*/
@@ -220,7 +231,6 @@ footer p{
 		margin-left: 20px;
 	}
 	.vk-link{
-		margin-left: 15px;
 	}
 }
 @media (max-width: 768px){
